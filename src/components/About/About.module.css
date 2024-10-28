@@ -1,0 +1,97 @@
+/* About.module.css */
+.about {
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about p {
+  font-size: 1.15em;
+  line-height: 1.75;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutImage {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.aboutImage:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    padding: 50px 30px;
+  }
+
+  .about h2 {
+    font-size: 2.2em;
+  }
+
+  .about p {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about h2 {
+    font-size: 2em;
+  }
+
+  .about p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+  }
+
+  .aboutImage {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 10px;
+  }
+
+  .about h2 {
+    font-size: 1.8em;
+  }
+
+  .about p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,86 @@
+/* Contact.module.css */
+.contact {
+  padding: 5vw 4vw; 
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  text-align: center; 
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 3vw; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactCard {
+  background-color: #fff; 
+  border-radius: 10px;
+  padding: 3vw; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw; 
+  flex-direction: row; 
+}
+
+.contactInfo p {
+  margin-left: 1vw;
+  font-size: 1em; 
+  color: #333; 
+}
+
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw; 
+  padding: 1vw 2vw; 
+  background-color: #003366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cvButton:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 1.5em; 
+  color: #003366; 
+  min-width: 30px; 
+}
+
+/* Médias Queries pour les écrans plus petits */
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 2em;
+  }
+
+  .contactCard {
+    padding: 20px;
+  }
+
+  .contactInfo {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .contactInfo p {
+    margin-left: 0; 
+  }
+
+  .cvButton {
+    width: 100%; 
+  }
+}

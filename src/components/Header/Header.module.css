@@ -1,0 +1,86 @@
+/* Header.module.css */
+.header {
+  width: 100%;
+  background-color: #003366;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  transition: max-height 0.3s ease;
+}
+
+.navLinks li {
+  margin: 0 20px;
+}
+
+.navLinks a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navLinks a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+.navLinks a.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menuButton {
+  display: none; 
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menuButton {
+    display: block; 
+    margin-bottom: 10px;
+  }
+
+  .navLinks {
+    display: none; /* Cacher par défaut */
+    flex-direction: column;
+    max-height: 0; /* Cache le menu */
+    overflow: hidden; /* Empêche l'affichage en dehors du conteneur */
+  }
+
+  .navLinks.open {
+    display: flex; /* Affiche le menu lorsqu'il est ouvert */
+    max-height: 500px; /* Donne une hauteur max pour l'animation */
+  }
+
+  .navLinks li {
+    margin: 10px 0; /* Espacement ajusté pour les petits écrans */
+  }
+}
